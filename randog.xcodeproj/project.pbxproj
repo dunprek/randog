@@ -35,6 +35,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F348F997224DB87100590475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F37C8525224B6511007D7B72 /* Main.storyboard */,
+				F37C8528224B6511007D7B72 /* Assets.xcassets */,
+				F37C852A224B6511007D7B72 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F348F998224DB89500590475 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F37C8521224B6511007D7B72 /* AppDelegate.swift */,
+				F37C8523224B6511007D7B72 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F37C8515224B6511007D7B72 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +73,8 @@
 		F37C8520224B6511007D7B72 /* randog */ = {
 			isa = PBXGroup;
 			children = (
-				F37C8521224B6511007D7B72 /* AppDelegate.swift */,
-				F37C8523224B6511007D7B72 /* ViewController.swift */,
-				F37C8525224B6511007D7B72 /* Main.storyboard */,
-				F37C8528224B6511007D7B72 /* Assets.xcassets */,
-				F37C852A224B6511007D7B72 /* LaunchScreen.storyboard */,
+				F348F998224DB89500590475 /* Controller */,
+				F348F997224DB87100590475 /* View */,
 				F37C852D224B6511007D7B72 /* Info.plist */,
 			);
 			path = randog;
