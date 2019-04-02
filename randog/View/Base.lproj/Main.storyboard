@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,24 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-up-XJE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sUp-sh-dmS">
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2O-Eq-L1Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="627"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="g2O-Eq-L1Q" firstAttribute="top" secondItem="1Tt-up-XJE" secondAttribute="topMargin" id="5If-Wz-afL"/>
-                                    <constraint firstItem="g2O-Eq-L1Q" firstAttribute="leading" secondItem="1Tt-up-XJE" secondAttribute="leadingMargin" constant="16" id="Ee3-2z-Oov"/>
-                                    <constraint firstItem="g2O-Eq-L1Q" firstAttribute="bottom" secondItem="1Tt-up-XJE" secondAttribute="bottomMargin" constant="20" id="bRC-hI-7B1"/>
-                                    <constraint firstItem="g2O-Eq-L1Q" firstAttribute="trailing" secondItem="1Tt-up-XJE" secondAttribute="trailingMargin" constant="16" id="qvh-2E-HI9"/>
-                                </constraints>
-                            </stackView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sUp-sh-dmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vpf-Za-r8T"/>
+                            <constraint firstItem="sUp-sh-dmS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jiA-Fh-A8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sUp-sh-dmS" secondAttribute="trailing" constant="16" id="oxg-T8-i3h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sUp-sh-dmS" secondAttribute="bottom" constant="20" id="tZ6-LC-vr3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="sUp-sh-dmS" id="rdi-y3-LA3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
